@@ -1,23 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Zhengming Wang's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Rock+3D&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="header">
-            <h1>ZhengmingWang</h1>
-        </div>
-        <div class="links">
-            <ul >
-                <li><a href="https://www.linkedin.com/in/zhengmingwang/">LinkedIn</a></li>
-                <li><a href="https://github.com/zmwang622">GitHub</a></li>
-<!--                 <li><a href="Zhengming Wang Resume.pdf">Resume</a></li> -->
-                <li><a href="mailto:zmwang622@gmail.com">Email</a></li>
-            </ul>
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zhengming Wang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --heading: #111111;
+      --body: #151821;
+      --link: #2c5fb8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: var(--body);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 86px auto;
+      padding: 0 26px;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      color: var(--heading);
+      font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+      font-size: clamp(2.5rem, 5.2vw, 3.9rem);
+      font-weight: 700;
+      line-height: 1.06;
+      letter-spacing: -0.01em;
+    }
+
+    .section-label {
+      margin: 34px 0 12px;
+      color: var(--heading);
+      font-size: clamp(1.05rem, 1.9vw, 1.95rem);
+      line-height: 1.45;
+      font-weight: 500;
+      max-width: 36ch;
+    }
+
+    p,
+    li {
+      margin: 0 0 16px;
+      font-size: clamp(1.05rem, 1.9vw, 1.95rem);
+      line-height: 1.45;
+      font-weight: 400;
+      max-width: 36ch;
+    }
+
+    ul {
+      margin: 8px 0 4px;
+      padding-left: 1.35rem;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-line: underline;
+      text-decoration-style: dotted;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.16em;
+      transition: opacity 120ms ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .contact {
+      margin-top: 26px;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <!--
+    <img src="images/profile.jpg" alt="Portrait of Zhengming Wang" style="width:100%;max-width:980px;border-radius:10px;margin-bottom:28px;" />
+    -->
+
+    <h1>Hi, I&rsquo;m Zhengming.</h1>
+
+    <p>
+      I lead monetization at <a href="https://character.ai/">Character.ai</a>. Before that, I worked at <a href="https://retool.com/">Retool</a> and studied at <a href="https://www.pitt.edu/">Pitt</a>.
+    </p>
+
+    <p class="section-label">I build for my community.</p>
+    <ul>
+      <li>
+        In 2023, I founded and sold a recruiting platform for CS majors, and one of its flagship resources was the <a href="https://github.com/simplifyjobs/summer2026-internships/">Summer 2026 Internships list</a>.
+      </li>
+      <li>
+        I founded and bootstrapped <a href="https://linktr.ee/vaccinatepa">VaccinatePA</a>, a Pennsylvania-based COVID vaccine availability tracker that helped 500k residents get first doses with support from 300+ volunteers.
+      </li>
+      <li>
+        I was president of <a href="https://pittcsc.org/">Pitt CSC</a>, where I helped create many foundational programs and resources, and I&rsquo;m still involved today.
+      </li>
+    </ul>
+
+    <p>
+      I like volleyball, language learning, and sports.
+    </p>
+
+    <div class="contact">
+      <p>Always happy to chat about product, AI, or building things that matter.</p>
+      <p>
+        <a href="mailto:zmwang622@gmail.com">Email me</a>, connect with me on
+        <a href="https://linkedin.com/in/mingw64">LinkedIn</a>, or view my
+        <a href="https://github.com/zmwang622">GitHub</a>.
+      </p>
+    </div>
+  </main>
+</body>
 </html>
